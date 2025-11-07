@@ -4,3 +4,4 @@ version = "0.1.0" # 버전
 edition = "2024" # 러스트 에디션
 
 [dependencies] # 의존성 목록 - 러스트에서는 코드 패키지를 크레이트(crate)라고 부름
+rand = "0.8.5"
