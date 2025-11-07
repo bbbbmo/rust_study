@@ -15,9 +15,14 @@ pub fn guessing_game() {
     
         io::stdin()
             .read_line(&mut guess)
-            .expect("Faild to read line");
+            .expect("잘못된 입력입니다");
     
-        let guess: u32 = guess.trim().parse().expect("타입은 number여야 합니다");
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => {
+                continue;
+            }
+        };
           
         println!("입력한 추측 값: {guess}");
     
