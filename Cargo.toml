@@ -1,6 +1,6 @@
-[package]
-name = "rust-study"
-version = "0.1.0"
-edition = "2024"
+[package] # 패키지 설정 구문
+name = "rust-study" # 패키지명
+version = "0.1.0" # 버전 
+edition = "2024" # 러스트 에디션
 
-[dependencies]
+[dependencies] # 의존성 목록 - 러스트에서는 코드 패키지를 크레이트(crate)라고 부름
